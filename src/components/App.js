@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import Header from '../shared/components/layout/Header';
+import React from 'react';
+import { element } from 'prop-types';
+
+import Header from '../shared/components/layout/Header/Header';
+import Content from '../shared/components/layout/Content/Content';
 
 import './App.css';
 
-class App extends Component {
-  constructor(props, context) {
-    super(props, context);
-  }
+const App = props => (
+  <div className="App">
+    <Header />
+    <Content>{props.children}</Content>
+  </div>
+);
 
-  render() {
-    return (
-      <div className="App">
-        <Header />
-      </div>
-    );
-  }
-}
+App.propTypes = {
+  children: element,
+};
 
 export default App;

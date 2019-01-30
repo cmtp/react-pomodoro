@@ -1,0 +1,34 @@
+header {
+  background: #536dfe;
+  display: flex
+}
+header div {
+  width: 50%;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+nav li {
+  padding: 16px 0;
+  width: 100px;
+  list-style: none;
+}
+nav li a {
+  width: 75px;
+  padding: inherit;
+}
+nav li:hover {
+  background: #ff6f00;
+}
+span,
+p,
+a, h1 {
+  color: #fafafa;
+}
+
+h1 {
+  font-size: 1.2em;
+}
